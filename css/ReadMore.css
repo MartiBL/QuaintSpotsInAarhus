@@ -501,7 +501,7 @@ nav a#navFooterMain.inactive {
   
   #InformationHistory {
     width: 81.4vw; 
-    height: 30.6vh;
+    height: auto;
     order: 2;
     
   }
@@ -542,7 +542,7 @@ nav a#navFooterMain.inactive {
   
   #InformationCulture {
     width: 81.4vw; 
-    height: 30.6vh;
+    height: auto;
     order: 2;
     
   }
