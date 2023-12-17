@@ -1,11 +1,7 @@
-# Boilerplate: HTML5, CSS and JavaScript
+Look at me, I made a whole website!
 
-Here's a quick start for any project.
+If you are reading this
 
-## Usage
+giv 12 plz :3
 
-* Copy the folder named `boilerplate` in your Filemagager
-* Paste the folder somewhere suitable.
-* Rename the folder to something usefull.
-
-That's it!
+Have a nice and jolly day!
