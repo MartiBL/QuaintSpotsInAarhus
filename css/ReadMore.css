@@ -507,7 +507,7 @@ nav a#navFooterMain.inactive {
   }
   
   #HistoryTitle {
-    font-size: 2.4vh;
+    font-size: 4.4vh;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     margin-bottom: 2vh;
@@ -515,7 +515,7 @@ nav a#navFooterMain.inactive {
   
   #HistoryText {
     margin-top: 1vh;
-    font-size: 1.2vh;
+    font-size: 1.7vh;
     font-family: "Lora", serif;
   }
   
@@ -548,7 +548,7 @@ nav a#navFooterMain.inactive {
   }
   
   #CultureTitle {
-    font-size: 2.4vh;
+    font-size: 4.4vh;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     margin-bottom: 2vh;
@@ -556,7 +556,7 @@ nav a#navFooterMain.inactive {
   
   #CultureText {
     margin-top: 1vh;
-    font-size: 1.2vh;
+    font-size: 1.7vh;
     font-family: "Lora", serif;
   }
   
