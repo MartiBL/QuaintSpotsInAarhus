@@ -1,0 +1,665 @@
+:root {
+  --contrast: lime;
+  --backgr: #000;
+  --background1: #fff3e2;
+  --background2: #ffc9be;
+  --background3: #bfb5ff;
+  --mainC1: #d2b48c;
+  --mainC2: #e2725b;
+  --mainC3: #745efc;
+  --footerC1: #cea165;
+  --footerC2: #b41f00;
+  --footerC3: #503cca;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.outlinedText {
+  color: black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#FBBody {
+  background-color: var(--background1);
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#MSBody {
+  background-color: var(--background2);
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#LQBody {
+  background-color: var(--background3);
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#SiteLogo {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-size: 4.9vh;
+  margin-top: 2.7vh;
+  margin-left: 2vw;
+  cursor: pointer;
+}
+
+nav {
+  width: 50vw;
+}
+
+nav ul {
+  margin-top: 8.5vh;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 21vw;
+  display: flex;
+  width: 50vw;
+}
+
+nav li {
+  margin-left: 20px; /* Adjust as needed to add space between list items */
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3vh;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  font-weight: 900;
+}
+
+nav a:hover:after {
+  width: 100%;
+}
+
+nav a#navFBMain.active::after {
+  width: 100%;
+}
+nav a#navMSMain.active::after {
+  width: 100%;
+}
+nav a#navLQMain.active::after {
+  width: 100%;
+}
+nav a#navFooterMain.active::after {
+  width: 100%;
+}
+nav a#navFBMain.inactive::after {
+  width: 0%;
+}
+nav a#navMSMain.inactive::after {
+  width: 0%;
+}
+nav a#navLQMain.inactive::after {
+  width: 0%;
+}
+nav a#navFooterMain.inactive::after {
+  width: 0%;
+}
+
+nav a#navFBMain.active {
+  font-weight: 900;
+}
+nav a#navMSMain.active {
+  font-weight: 900;
+}
+nav a#navLQMain.active {
+  font-weight: 900;
+}
+nav a#navFooterMain.active {
+  font-weight: 900;
+}
+nav a#navFBMain.inactive {
+  font-weight: 400;
+}
+nav a#navMSMain.inactive {
+  font-weight: 400;
+}
+nav a#navLQMain.inactive {
+  font-weight: 400;
+}
+nav a#navFooterMain.inactive {
+  font-weight: 400;
+}
+
+#navFBMain {
+  cursor: pointer;
+}
+#navMSMain {
+  cursor: pointer;
+}
+#navLQMain {
+  cursor: pointer;
+}
+#FBHeader {
+  background-color: var(--mainC1);
+  color: #fff;
+  height: 11.4vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px;
+}
+
+#FBFooter {
+  margin-top: 11vh;
+  height: 32vh;
+  width: 100vw;
+  background-color: var(--footerC1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#MSHeader {
+  background-color: var(--mainC2);
+  color: #fff;
+  height: 11.4vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px;
+}
+
+#MSFooter {
+  margin-top: 11vh;
+  height: 32vh;
+  width: 100vw;
+  background-color: var(--footerC2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#LQHeader {
+  background-color: var(--mainC3);
+  color: #fff;
+  height: 11.4vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px;
+}
+
+#LQFooter {
+  margin-top: 11vh;
+  height: 32vh;
+  width: 100vw;
+  background-color: var(--footerC3);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logoFooter {
+  height: 7.4vh;
+  margin-left: 3vw;
+}
+
+.textFooter {
+  text-align: center;
+  font-size: large;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#VisitAarhusLogo {
+  padding-right: 3.5vw;
+}
+
+#TopImage {
+  width: 100vw;
+  z-index: -1;
+}
+
+#ReadMoreTitleFB {
+  z-index: 1;
+  font-size: 7.3vh;
+  font-family: "Montserrat", sans-serif;
+  color: var(--mainC1);
+  font-weight: 900;
+  text-align: center;
+  margin-top: -12vh;
+}
+#ReadMoreTitleMS {
+  z-index: 1;
+  font-size: 7.3vh;
+  font-family: "Montserrat", sans-serif;
+  color: var(--mainC2);
+  font-weight: 900;
+  text-align: center;
+  margin-top: -12vh;
+}
+#ReadMoreTitleLQ {
+  z-index: 1;
+  font-size: 7.3vh;
+  font-family: "Montserrat", sans-serif;
+  color: var(--mainC3);
+  font-weight: 900;
+  text-align: center;
+  margin-top: -12vh;
+}
+
+#HistorySection {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+
+#InformationHistory {
+  width: 38.2vw;
+  height: 40vh;
+  margin-right: -2.5vw;
+}
+
+#HistoryTitle {
+  font-size: 4.9vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#HistoryText {
+  margin-top: 1vh;
+  font-size: 2.4vh;
+  font-family: "Lora", serif;
+}
+
+#HistoryImage {
+  height: 55vh;
+  margin-top: 9vh;
+  margin-left: -2.5vw;
+}
+
+#HistoryCultureDivider {
+  border-color: #000;
+}
+
+#CultureSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10vh;
+}
+
+#InformationCulture {
+  width: 38.2vw;
+  height: 40vh;
+  margin-left: -2.5vw;
+  order: 2;
+}
+
+#CultureTitle {
+  font-size: 4.9vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#CultureText {
+  margin-top: 1vh;
+  font-size: 2.4vh;
+  font-family: "Lora", serif;
+}
+
+#CultureImage {
+  height: 55vh;
+  margin-top: 9vh;
+  order: 1;
+  margin-right: -2.5vw;
+}
+
+#HistoryCultureDivider {
+  border-color: #000;
+}
+
+#GalleryTitle {
+  font-size: 4.9vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#FullPageDivider {
+  width: 90%;
+  border-color: #000;
+}
+
+#GalleryImages {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
+  margin-bottom: 10vh;
+}
+
+#ReviewsTitle {
+  font-size: 4.9vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+#ReviewsPlaceholderDiv {
+  width: 79vw;
+  height: 37vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+}
+
+#ReviewsApology {
+  text-align: center;
+}
+
+#GalleryImage
+  {
+    height: 86.4vh; 
+    width: auto;
+  }
+
+@media screen and (max-width: 768px) {
+  #MainNav 
+  {
+    display: none;
+  }
+
+  #FBBody 
+  {
+    background-color: var(--background1);
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  #MSBody 
+  {
+    background-color: var(--background2);
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  #FBHeader {
+    background-color: var(--mainC1);
+    color: #fff;
+    height: 7.3vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  #MSHeader {
+    background-color: var(--mainC2);
+    color: #fff;
+    height: 7.3vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  #LQHeader {
+    background-color: var(--mainC3);
+    color: #fff;
+    height: 7.3vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #SiteLogo 
+  {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 600;
+    font-size: 3.5vh;
+    margin-left: 2vw;
+    cursor: pointer;
+    margin-top: 1.3vh;
+  }
+ 
+  
+  #TopImage {
+   display: none;
+  }
+  
+  #ReadMoreTitleFB {
+    z-index: 1;
+    font-size: 3.5vh;
+    font-family: "Montserrat", sans-serif;
+    color: var(--mainC1);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 16vh;
+  }
+  #ReadMoreTitleMS {
+    z-index: 1;
+    font-size: 3.5vh;
+    font-family: "Montserrat", sans-serif;
+    color: var(--mainC2);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 16vh;
+  }
+  #ReadMoreTitleLQ {
+    z-index: 1;
+    font-size: 3.5vh;
+    font-family: "Montserrat", sans-serif;
+    color: var(--mainC3);
+    font-weight: 900;
+    text-align: center;
+    margin-top: 16vh;
+  }
+
+  .outlinedText {
+    
+    text-shadow: none
+  }
+
+  #HistorySection {
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #InformationHistory {
+    width: 81.4vw; 
+    height: 30.6vh;
+    order: 2;
+    
+  }
+  
+  #HistoryTitle {
+    font-size: 2.4vh;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  
+  #HistoryText {
+    margin-top: 1vh;
+    font-size: 1.2vh;
+    font-family: "Lora", serif;
+  }
+  
+  #HistoryImage {
+    width: 81.4vw; 
+    height: auto;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+  }
+  
+  #HistoryCultureDivider {
+    border-color: #000;
+  }
+
+  #CultureSection {
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #InformationCulture {
+    width: 81.4vw; 
+    height: 30.6vh;
+    order: 2;
+    
+  }
+  
+  #CultureTitle {
+    font-size: 2.4vh;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  
+  #CultureText {
+    margin-top: 1vh;
+    font-size: 1.2vh;
+    font-family: "Lora", serif;
+  }
+  
+  #CultureImage {
+    width: 81.4vw; 
+    height: auto;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #HistoryCultureDivider {
+    border-color: #000;
+  }
+
+  #GalleryTitle {
+    font-size: 2.4vh;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  
+  #FullPageDivider {
+    width: 90%;
+    border-color: #000;
+  }
+  
+  #GalleryImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+  }
+  
+  #GalleryImage
+  {
+    width: 81.4vw; 
+    height: auto;
+  }
+
+  #ReviewsTitle {
+    font-size: 2.4vh;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  
+  #ReviewsPlaceholderDiv {
+    width: 81.4vw;
+    height: 20vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8vh;
+  }
+  
+  #ReviewsApology {
+    text-align: center;
+  }
+
+  #FBFooter {
+    height: 14.5vh;
+    width: 100vw;
+    background-color: var(--footerC1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #MSFooter {
+    height: 14.5vh;
+    width: 100vw;
+    background-color: var(--footerC2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #LQFooter {
+    height: 14.5vh;
+    width: 100vw;
+    background-color: var(--footerC3);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .logoFooter {
+    height: 4.0vh;
+    margin-left: 3vw;
+  }
+  
+  .textFooter {
+    text-align: center;
+    font-size: 1.8vh;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+  }
+  
+  #VisitAarhusLogo {
+   margin-left: 4.0vw;
+  }
+
+  #MidtraffikLogo
+  {
+    margin-left: 20vw;
+  }
+}

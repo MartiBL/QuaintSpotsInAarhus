@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aarhus hidden gems main page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<header>
+  <div id="SiteLogo" onclick="scrollToTop()">Aarhus Gems</div>
+  <nav>
+    <ul>
+      <li><a  id="navFBMain" href="#FBMain">Frederiksbjerg</a></li>
+      <li><a  id="navMSMain" href="#MSMain">Møllestien</a></li>
+      <li><a  id="navLQMain" href="#LQMain">Latin Quarter</a></li>
+      <li><a  id="navFooterMain" href="#FooterMain">Useful links</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+<!-- Section for the top of the main page -->
+<section id="PageStart">
+  <p id="MainPageTitle">Quaint spots in Aarhus</p>
+  <!-- THis div contains the three photos of the sights at the top -->
+  <div id="photosMain">
+    <img id="FBMP" src="images/FBMP.svg" alt="FrederiksbjergPhoto" onclick="scrollToSection('FBMain')">
+    <img id="MSMP" src="images/MSMP.svg" alt="MollestienPhoto"     onclick="scrollToSection('MSMain')">
+    <img id="LQMP" src="images/LQMP.svg" alt="LatinQuarterPhoto"   onclick="scrollToSection('LQMain')">
+  </div>
+</section>
+
+<!-- Section for Frederiksbjerg -->
+<section id="FBMain">
+  <div class="container">
+  <div id="FBSquareBox">
+    <p id="FBTitle">Frederiksbjerg</p>
+    <hr id="SquareBoxDivider">
+    <div id="FBTextMain">
+      Vibrant Aarhus neighborhood with a mix of history and modernity,
+      featuring tree-lined streets, lively cafes, and cultural landmarks
+      like the Aarhus Concert Hall south of Aarhus central station.
+    </div>
+    <div id="FBButtons">
+      <button id="FBLocation"> <p>Location</p> <img  id="iconButton" src="images/Address.svg" alt="addressIcon"></button>
+      <button id="FBReadMore" onclick="referToFB()"> <p>Read more</p> <img id="iconButton"  src="images/Forward Button.svg" alt="readMoreIcon"></button>
+    </div>
+  </div>
+  <img src="images/FBBoxPhoto.svg" alt="Photo of Frederiksbjerg" class="main-photo1">
+</div>
+</section> 
+
+<!-- Section for Mollestien -->
+<section id="MSMain">
+  <div class="container2">
+  <img src="images/MSBoxPhoto.svg" alt="Mollestien Photo" class="main-photo2"> 
+  <div id="MSSquareBox">
+    <p id="MSTitle">Møllestien</p>
+    <hr id="SquareBoxDivider">
+    <div id="MSTextMain">
+      An old street where the houses were built in the 18th century,
+      exuding ancient charm. The street itself has existed even longer
+      and is dated to the early middle ages – and even back to the time of the Vikings.
+    </div>
+    <div id="MSButtons">
+      <button id="MSLocation"><p>Location</p>  <img id="iconButton" src="images/Address.svg" alt="addressIcon"> </button>
+      <button id="MSReadMore" onclick="referToMS()"><p>Read more</p> <img id="iconButton" src="images/Forward Button.svg" alt="readMoreIcon"> </button>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Section for LatinQuarter -->
+<section id="LQMain">
+  <div class="container">
+  <div id="LQSquareBox">
+    <p id="LQTitle">Latin Quarter</p>
+    <hr id="SquareBoxDivider">
+    <div id="LQTextMain">
+      The Latin Quarter is known for its cobblestone 
+      streets and a mix of old and modern architecture.
+      It's a hub for shopping, dining, and cultural experiences containing various boutiques and galleries.  
+    </div>
+    <div id="LQButtons">
+      <button id="LQLocation"><p>Location</p>  <img id="iconButton" src="images/Address.svg" alt="addressIcon"> </button>
+      <button id="LQReadMore" onclick="referToLQ()"><p>Read more</p> <img id="iconButton" src="images/Forward Button.svg" alt="readMoreIcon"> </button>
+    </div>
+  </div>
+ <img src="images/LQBoxPhoto.svg" alt="Latin Quarter photo" class="main-photo3"> 
+</div>
+</section>
+
+  
+</body>
+
+<footer id="FooterMain">
+  <div id="Midtraffik">
+    <a href="https://www.midttrafik.dk/"><img href="https://www.midttrafik.dk/" id class="logoFooter" src="images/MidtraffikLogo.svg" alt="Midtraffik logo"></a>
+    <a href="https://www.midttrafik.dk/"><p class="textFooter">Midtraffik</p></a>
+    <a href="https://www.midttrafik.dk/"><p class="textFooter">public transport</p></a>
+  </div>
+  <div id="VisitAarhus">
+    <a href="https://www.visitaarhus.dk/"><img id="VisitAarhusLogo" class="logoFooter" src="images/VisitAarhussvg.svg" alt="Visit aarhus website"></a>
+    <a href="https://www.visitaarhus.dk/"><p class="textFooter">VisitAarhus</p></a>
+    <a href="https://www.visitaarhus.dk/"><p class="textFooter">website</p></a>
+  </div>
+</footer>
+<script src="js/js.js">
+</script>
+</html>

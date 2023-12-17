@@ -1,0 +1,573 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+ :root {
+   --contrast: lime;
+   --backgr: #000;
+   --background1: #FFF3E2;
+   --background2: #FFC9BE;
+   --background3: #BFB5FF;
+   --mainC1: #D2B48C;
+   --mainC2: #E2725B;
+   --mainC3: #745EFC;
+   --footerC1: #CEA165;
+   --footerC2: #B41F00;
+   --footerC3: #503CCA;
+ }
+/* Enable smooth scrolling */
+ html 
+{
+  scroll-behavior: smooth; 
+}
+/* Use your variables on elements */
+
+body
+{
+  background-color: var(--background1);
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header
+{
+  background-color: var(--mainC1);
+  color: #fff;
+  padding: 10px;
+  height: 11.4vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#SiteLogo
+{
+  font-family: 'Cinzel Decorative', serif;
+  font-weight:900;
+  font-size: 4.9vh;
+  margin-top: 2.7vh;
+  margin-left: 2vw;
+  cursor:pointer;
+}
+
+#MainPageTitle
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder;
+  font-size: 7.2vh;
+  text-align: center;
+  margin-top: 20.4vh;
+}
+
+#photosMain
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10vw ;
+  padding-right:10vw ;
+}
+
+#FBMP
+{
+  width:22.22vw;
+  height: 51.94vh;
+  cursor:pointer;
+}
+
+#MSMP
+{
+  width:22.22vw;
+  height: 51.94vh;
+  cursor:pointer;
+}
+
+#LQMP
+{
+  width:22.22vw;
+  height: 51.94vh;
+  cursor:pointer;
+}
+
+/* Frederiksbjerg information box on main page style */
+#FBMain
+{
+  display: flex;
+}
+
+#FBSquareBox
+{
+  margin-top: 30vh;
+  position: relative;
+  background-color: var(--mainC1);
+  width: 35vw;
+  height: 65vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  margin-left: 7vw;
+
+}
+
+#FBSquareBox::after {
+  content: "";
+  position: absolute;
+  top: 4vh; /* Adjust the top offset for the shadow effect */
+  right: 2.14vw; /* Adjust the left offset for the shadow effect */
+  width: 35vw;
+  height: 65vh;
+  background-color: rgba(103, 80, 50, 0.62); /* Adjust the color and opacity for the shadow effect */
+  border-radius: 20px;
+  z-index: -2; /* Place the shadow behind #FBSquareBox */
+}
+#SquareBoxDivider
+{
+  width: 86%;
+  border-color: #000;
+}
+
+#FBTitle
+{
+font-family: 'Montserrat', sans-serif;
+font-size: 4.85vh;
+font-weight: 600;
+margin-top: 2vh;
+margin-bottom: 0.5vh;
+text-align: center;
+}
+
+#FBTextMain
+{
+  font-family: 'Lora', serif;
+  font-size: 3.64vh;
+  justify-content: center;
+  padding-left:4.0vw ;
+  padding-right:3.0vw ;
+  padding-top: 2vh;
+}
+
+#FBButtons
+{
+  display:flex;
+  justify-content:space-evenly;
+  
+}
+
+#FBLocation
+{
+  margin-top: 5.7vh;
+  background-color: white;
+  color: #000;
+  font-size: 3.04vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 12vw;
+  height: 7vh;
+  font-weight: 500;
+}
+
+#FBReadMore
+{
+  margin-top: 5.7vh;
+  background-color: black;
+  color: white;
+  font-size: 3.04vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 12vw;
+  height: 7vh;
+}
+
+/* Mollestien information box on main page style */
+#MSMain
+{
+  display: flex;
+}
+
+#MSSquareBox
+{
+  margin-left: 54vw;
+  margin-top: 21vh;
+  background-color: var(--mainC2);
+  width: 35vw;
+  height: 65vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  position: relative; 
+}
+
+#MSSquareBox::after {
+  content: "";
+  position: absolute;
+  top: 4vh; /* Adjust the top offset for the shadow effect */
+  left: 2.14vw; /* Adjust the left offset for the shadow effect */
+  width: 35vw;
+  height: 65vh;
+  background-color: rgba(122, 61, 48, 0.71); /* Adjust the color and opacity for the shadow effect */
+  border-radius: 20px;
+  z-index: -2; /* Place the shadow behind #FBSquareBox */
+}
+
+#MSTitle
+{
+font-family: 'Montserrat', sans-serif;
+font-size: 4.85vh;
+font-weight: 600;
+margin-top: 2vh;
+margin-bottom: 0.5vh;
+text-align: center;
+}
+
+#MSTextMain
+{
+  font-family: 'Lora', serif;
+  font-size: 3.64vh;
+  justify-content: center;
+  padding-left:4.0vw ;
+  padding-right:3.0vw ;
+  padding-top: 2vh;
+}
+
+#MSButtons
+{
+  display:flex;
+  justify-content:space-evenly;
+  
+}
+
+#MSLocation
+{
+  margin-top: 5.7vh;
+  background-color: white;
+  color: #000;
+  font-size: 3.04vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 12vw;
+  height: 7vh;
+  font-weight: 500;
+}
+
+#MSReadMore
+{
+  margin-top: 5.7vh;
+  background-color: black;
+  color: white;
+  font-size: 3.04vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 12vw;
+  height: 7vh;
+}
+
+/* Latin quarter information box on main page style */
+#LQMain
+{
+  display: flex;
+}
+
+#LQSquareBox
+{
+  margin-top: 21vh;
+  margin-left: 7vw;
+  position: relative;
+  background-color: var(--mainC3);
+  width: 35vw;
+  height: 65vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  
+}
+
+#LQSquareBox::after {
+  content: "";
+  position: absolute;
+  top: 4vh; /* Adjust the top offset for the shadow effect */
+  right: 2.14vw; /* Adjust the left offset for the shadow effect */
+  width: 35vw;
+  height: 65vh;
+  background-color: rgba(64, 55, 122, 0.71); /* Adjust the color and opacity for the shadow effect */
+  border-radius: 20px;
+  z-index: -2; /* Place the shadow behind #FBSquareBox */
+}
+
+#SquareBoxDivider
+{
+  width: 86%;
+  border-color: #000;
+}
+
+#LQTitle
+{
+font-family: 'Montserrat', sans-serif;
+font-size: 4.85vh;
+font-weight: 600;
+margin-top: 2vh;
+margin-bottom: 0.5vh;
+text-align: center;
+}
+
+#LQTextMain
+{
+  font-family: 'Lora', serif;
+  font-size: 3.64vh;
+  justify-content: center;
+  padding-left:4.0vw ;
+  padding-right:3.0vw ;
+  padding-top: 2vh;
+}
+
+#LQButtons
+{
+  display:flex;
+  justify-content:space-evenly;
+  
+}
+
+#LQLocation
+{
+  margin-top: 5.7vh;
+  background-color: white;
+  color: #000;
+  font-size: 3.04vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 12vw;
+  height: 7vh;
+  font-weight: 500;
+}
+
+#LQReadMore
+{
+  margin-top: 5.7vh;
+  background-color: black;
+  color: white;
+  font-size: 3.04vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 12vw;
+  height: 7vh;
+}
+
+#iconButton
+{
+  width: 2.8vw;
+  height: 5vh;
+}
+
+.container
+{
+  position: relative;
+  display: flex;
+  margin-left: 3vw;
+}
+
+.container2
+{
+  position: relative;
+  display: flex;
+  margin-left: -3vw;
+}
+
+.main-photo1
+{
+  width: 58.8vw;
+  height: 56vh;
+  position: absolute;
+  z-index: -1; /* Ensure photos are behind the boxes */
+  margin-left: 30vw;
+  margin-top: 35vh;
+}
+
+.main-photo2
+{
+  width: 58.8vw;
+  height: 56vh;
+  position: absolute;
+  z-index: -1; /* Ensure photos are behind the boxes */
+  margin-top: 26vh;
+  margin-left: 9.9vw;
+}
+
+.main-photo3
+{
+  width: 66.3vw;
+  height: 56vh;
+  margin-left: 23vw;
+  margin-top: 26vh;
+  position: absolute;
+  z-index: -1; /* Ensure photos are behind the boxes */
+}
+nav
+{
+  width: 50vw;
+}
+
+nav ul 
+{
+  margin-top: 8.5vh;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 21vw ;
+  display: flex;
+  width: 50vw;
+}
+
+nav li 
+{
+  margin-left: 20px; /* Adjust as needed to add space between list items */
+}
+
+nav a 
+{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; 
+  font-weight:500;
+  font-size: 3vh;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  font-weight: 900;
+}
+
+nav a:hover:after {
+  width: 100%;
+}
+
+nav a#navFBMain.active::after
+{
+  width: 100% ; 
+}
+nav a#navMSMain.active::after
+{
+  width: 100%;
+}
+nav a#navLQMain.active::after
+{
+  width: 100%;
+}
+nav a#navFooterMain.active::after
+{
+  width: 100%;
+}
+nav a#navFBMain.inactive::after
+{
+  width: 0% ;
+}
+nav a#navMSMain.inactive::after
+{
+  width: 0%;
+}
+nav a#navLQMain.inactive::after
+{
+  width: 0%;
+}
+nav a#navFooterMain.inactive::after
+{
+  width: 0%;
+}
+
+nav a#navFBMain.active
+{
+  font-weight: 900;
+}
+nav a#navMSMain.active
+{
+  font-weight: 900;
+}
+nav a#navLQMain.active
+{
+  font-weight: 900;
+}
+nav a#navFooterMain.active
+{
+  font-weight: 900;
+}
+nav a#navFBMain.inactive
+{
+  font-weight: 400;
+}
+nav a#navMSMain.inactive
+{
+  font-weight: 400;
+}
+nav a#navLQMain.inactive
+{
+  font-weight: 400;
+}
+nav a#navFooterMain.inactive
+{
+  font-weight: 400;
+}
+
+
+#FooterMain
+{
+  margin-top: 11vh;
+  height: 32vh;
+  width: 100vw;
+  background-color: var(--footerC3);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logoFooter
+{
+  height: 7.4vh;
+  margin-left: 3vw;
+}
+
+.textFooter
+{
+  text-align: center;
+  font-size: large;
+  color: white;
+  font-family: 'Montserrat' ,  sans-serif;
+  font-weight: 600;
+}
+ 
+#VisitAarhusLogo
+{
+  padding-right: 3.5vw;
+}
+
+
